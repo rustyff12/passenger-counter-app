@@ -39,8 +39,16 @@ button {
 
 #increment-btn {
     background: darkred;
-}
+    text-transform: uppercase;
+    cursor: pointer;
+}  
+
+/* #increment-btn:hover {
+    color: blue;
+} */
 
 #save-btn {
     background: darkgreen;
+    text-transform: uppercase;
+    cursor: pointer;
 }
