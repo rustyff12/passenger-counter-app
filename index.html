@@ -14,15 +14,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="app">
+    <!--- Header --->
+    <h1 class="title">Passenger Counter App</h1>
+    <!--- App --->
+    <div class="container">
         <h1>People entered:</h1>
         <h2 id="count-el">0</h2>
-        <div class="container">
-          <button class="btn" id="increment-btn" onclick="increment()">Increment</button>
-          <button class="btn" id="save-btn" onclick="save()">Save</button>
-        </div>
+        <button class="btn" id="increment-btn" onclick="increment()">Increment</button>
+        <button class="btn" id="save-btn" onclick="save()">Save</button>
         <p id="save-el">Previous entries: </p>
         <script src="./js/train.js"></script>
     </div>
+    <!--- Footer --->
+    <footer class="footer">
+        <p id="about">
+          Copyright &copy;
+          <a href="https://rustyff12.github.io/" target="_blank"
+            >Russell Frankpitt</a
+          >
+          2023
+        </p>
+      </footer>
   </body>
 </html>

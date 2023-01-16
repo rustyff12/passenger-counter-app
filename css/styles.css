@@ -17,6 +17,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+
 }
 
 h1 {
@@ -30,9 +32,10 @@ h2 {
 }
 
 /* ---- Body ---- */
-.app {
-    max-width: 1100px;
-    margin: 0 auto;
+.title {
+    margin: 0;
+    padding: 2rem;
+    /* background-color: white; */
 }
 
 .container {
@@ -41,6 +44,11 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+    backdrop-filter: brightness(60%);
 }
 
 
@@ -61,18 +69,38 @@ button {
     cursor: pointer;
     padding: 1rem;
     margin: 1rem;
+    font-size: 1.5rem;
 }
 
 #increment-btn {
-    background: darkred;
+    background: rgb(17, 60, 177);
 }  
 
-/* #increment-btn:hover {
-    color: blue;
-} */
-
 #save-btn {
-    background: darkgreen;
+    background: rgb(6, 138, 6);
+}
+
+#increment-btn:hover,
+#save-btn:hover {
+    text-decoration: underline;
+}
+ #save-el {
+    font-size: 1.25rem;
+ }
+/* ---- Footer ---- */
+footer {
+    background-color: var(--color-main);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 1.5rem;
+}
+
+.footer p a {
+    color: black;
 }
 /* ---- Media Queries */
 
